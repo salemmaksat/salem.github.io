@@ -48,10 +48,10 @@ jQuery(document).ready(function() {
         emailjs.send('gmail', 'base', templateParams)
             .then(function(response) {
                console.log('SUCCESS!', response.status, response.text);
-               success = true
+               success = true;
             }, function(error) {
                console.log('FAILED...', error);
-               success = false
+               success = false;
             });
 
         if(success) {
